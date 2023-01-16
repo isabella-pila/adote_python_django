@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'usuarios',
     'divulgar',
+    'adotar',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,6 @@ MESSAGE_TAGS = {
     constants.INFO: 'alert-info',
     constants.WARNING: 'alert-warning',
 }
+
+# email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
